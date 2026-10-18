@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automation – Privacy Policy / Politique de confidentialité / Informativa sulla privacy</title>
+<meta name="description" content="Privacy policy of the Automation desktop application (EN / FR / IT).">
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --accent:#0b5cad; --line:#d8dee4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1318; --fg:#e6edf3; --muted:#9aa4af; --accent:#6cb2ff; --line:#2b323a; }
+  }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  nav { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+        padding:10px 16px; text-align:center; }
+  nav a { margin:0 10px; color:var(--accent); text-decoration:none; font-weight:600; }
+  h1 { font-size:1.7rem; margin:32px 0 4px; }
+  h2 { font-size:1.15rem; margin:28px 0 6px; }
+  p, li { margin:8px 0; }
+  .updated { color:var(--muted); font-size:.9rem; margin-top:0; }
+  section { padding-top:8px; margin-bottom:56px; border-bottom:1px solid var(--line); }
+  a { color:var(--accent); }
+  code { background:rgba(127,127,127,.15); padding:1px 5px; border-radius:4px; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="#en">English</a>
+  <a href="#fr">Français</a>
+  <a href="#it">Italiano</a>
+</nav>
+<main>
+
+<!-- ===================================================== ENGLISH ===================================================== -->
+<section id="en" lang="en">
+<h1>Privacy Policy – Automation</h1>
+<p class="updated">Last updated: 18 October 2026</p>
+
+<h2>1. Who we are</h2>
+<p>Automation is a desktop application for Windows, macOS and Linux that lets users record, replay and manage automated browser tests. The App is published by IT SOLUTION. Contact: <a href="mailto:contactus@travelpostservices.eu">contactus</a>.</p>
+
+<h2>2. In short</h2>
+<ul>
+  <li>The App runs on your computer. There is no user account and no Publisher server.</li>
+  <li>The Publisher does not collect, receive, sell or share your personal data. The App contains no analytics, advertising, tracking or telemetry.</li>
+  <li>The App only makes network connections that are needed for the features you use (see section 5).</li>
+</ul>
+
+<h2>3. Data stored on your device</h2>
+<p>The App stores its data in a folder named <code>playwright-runtime</code> in your user home folder. It contains: recorded tests, test data files (CSV), run results, reports and failure screenshots; your settings; the sharing profile you enter (first name, last name, company, email); the logo you choose for branding; and encrypted secrets (see section 7).</p>
+<p>This data stays on your device and the Publisher has no access to it. Please note that a recorded test may contain values you typed during the recording, including credentials.</p>
+
+<h2>4. Optional AI features</h2>
+<p>AI features (test improvement, failure diagnosis, test generation from a description, JS/Java conversion, test data generation and the chat assistant) are optional and can be turned off in Settings → AI.</p>
+<p>When you use one of them, the App sends the relevant content to the API of Anthropic: test code, selectors, error messages and logs, failure screenshots and the text you type. This content may include values contained in your tests. We recommend not using AI features on tests containing real credentials.</p>
+<ul>
+  <li><strong>Personal key mode (BYOK):</strong> requests are made with your own Anthropic API key, under your own relationship with Anthropic.</li>
+  <li><strong>Managed mode:</strong> the key is supplied by an administrator or organization.</li>
+</ul>
+<p>The Publisher does not operate any intermediate server and does not receive this content. Anthropic’s handling of the data is governed by its own policies: <a href="https://www.anthropic.com/legal/privacy" rel="noopener">anthropic.com/legal/privacy</a>.</p>
+
+<h2>5. Network connections</h2>
+<ul>
+  <li><strong>Websites you test:</strong> the browsers controlled by Playwright visit the addresses used in your tests.</li>
+  <li><strong>Component downloads:</strong> on first use, the App may download Playwright packages from the npm registry and browser binaries from Playwright’s download servers. These providers may see your IP address.</li>
+  <li><strong>Anthropic API:</strong> only if you use AI features.</li>
+  <li><strong>Git repositories and databases:</strong> only those you configure yourself; connections go directly from your computer to your servers.</li>
+</ul>
+
+<h2>6. Sharing tests</h2>
+<p>Exporting a <code>.tps</code> file or publishing to a Git repository happens only when you decide to do it. The shared content includes the tests, their data files and your sharing profile (name, company, email). The App warns you when it detects passwords in the content and lets you blank them out; this is a warning, not a guarantee. Recipients and Git hosts handle the data under their own policies. You are responsible for what you share.</p>
+
+<h2>7. Credentials and security</h2>
+<p>Your API key, Git tokens and database credentials are encrypted using your operating system’s secure storage (Keychain on macOS, DPAPI on Windows, libsecret on Linux) when available. They are never written in clear text in the settings file or in logs. If system encryption is unavailable, the App warns you. No system is completely secure.</p>
+
+<h2>8. Retention and deletion</h2>
+<p>Data is kept until you delete it. You can delete tests in the App and remove your AI key in Settings. To remove everything, uninstall the App and delete the <code>playwright-runtime</code> folder in your home folder (uninstalling alone may not remove it).</p>
+
+<h2>9. Your rights</h2>
+<p>The Publisher does not hold your data, so there is nothing to access, correct or delete on the Publisher’s side. If you write to the Publisher, your email address and message are used only to answer you and are kept for as long as needed; you can ask for their deletion at any time.</p>
+<p>Under the GDPR you have the rights of access, rectification, erasure, restriction, portability and objection, and the right to lodge a complaint with your data protection authority (for example the CNIL in France or the Garante in Italy). For data held by third parties (Anthropic, Git hosts, etc.), please contact them directly.</p>
+
+<h2>10. Children</h2>
+<p>The App is intended for professional use by adults and is not directed at children. The Publisher does not knowingly collect data from children.</p>
+
+<h2>11. Changes</h2>
+<p>This policy may be updated. The date at the top shows the latest version; significant changes will be described in the App’s release notes.</p>
+
+<h2>12. Contact</h2>
+<p>IT SOLUTION – <a href="mailto:contactus@travelpostservices.eu">contactus</a></p>
+</section>
+
+<!-- ===================================================== FRANÇAIS ===================================================== -->
+<section id="fr" lang="fr">
+<h1>Politique de confidentialité – Automation</h1>
+<p class="updated">Dernière mise à jour : 18 octobre 2026</p>
+
+<h2>1. Qui sommes-nous</h2>
+<p>Automation est une application de bureau pour Windows, macOS et Linux qui permet d’enregistrer, de rejouer et de gérer des tests automatisés de navigateur. L’Application est éditée par IT SOLUTION. Contact: <a href="mailto:contactus@travelpostservices.eu">contactus</a>.</p>
+
+<h2>2. En bref</h2>
+<ul>
+  <li>L’Application fonctionne sur votre ordinateur. Il n’y a ni compte utilisateur ni serveur de l’Éditeur.</li>
+  <li>L’Éditeur ne collecte, ne reçoit, ne vend ni ne partage vos données personnelles. L’Application ne contient ni outil d’analyse d’audience, ni publicité, ni suivi, ni télémétrie.</li>
+  <li>L’Application n’établit que les connexions réseau nécessaires aux fonctionnalités que vous utilisez (voir section 5).</li>
+</ul>
+
+<h2>3. Données stockées sur votre appareil</h2>
+<p>L’Application stocke ses données dans un dossier nommé <code>playwright-runtime</code>, situé dans votre dossier personnel. Il contient : les tests enregistrés, les fichiers de données de test (CSV), les résultats d’exécution, les rapports et les captures d’écran d’échec ; vos réglages ; le profil de partage que vous renseignez (prénom, nom, entreprise, e-mail) ; le logo choisi pour la personnalisation ; et des secrets chiffrés (voir section 7).</p>
+<p>Ces données restent sur votre appareil et l’Éditeur n’y a pas accès. Un test enregistré peut contenir des valeurs saisies pendant l’enregistrement, y compris des identifiants.</p>
+
+<h2>4. Fonctionnalités d’IA facultatives</h2>
+<p>Les fonctionnalités d’IA (amélioration de test, diagnostic d’échec, génération de test à partir d’une description, conversion JS/Java, génération de données de test et assistant de chat) sont facultatives et peuvent être désactivées dans Paramètres → IA.</p>
+<p>Lorsque vous en utilisez une, l’Application envoie le contenu concerné à l’API d’Anthropic : code du test, sélecteurs, messages d’erreur et journaux, captures d’écran d’échec et texte que vous saisissez. Ce contenu peut inclure des valeurs présentes dans vos tests. Nous vous déconseillons d’utiliser l’IA sur des tests contenant de vrais identifiants.</p>
+<ul>
+  <li><strong>Mode clé personnelle (BYOK) :</strong> les requêtes utilisent votre propre clé API Anthropic, dans le cadre de votre propre relation avec Anthropic.</li>
+  <li><strong>Mode managé :</strong> la clé est fournie par un administrateur ou une organisation.</li>
+</ul>
+<p>L’Éditeur n’exploite aucun serveur intermédiaire et ne reçoit pas ce contenu. Le traitement par Anthropic est régi par ses propres politiques : <a href="https://www.anthropic.com/legal/privacy" rel="noopener">anthropic.com/legal/privacy</a>.</p>
+
+<h2>5. Connexions réseau</h2>
+<ul>
+  <li><strong>Sites testés :</strong> les navigateurs pilotés par Playwright visitent les adresses utilisées dans vos tests.</li>
+  <li><strong>Téléchargement de composants :</strong> à la première utilisation, l’Application peut télécharger des paquets Playwright depuis le registre npm et les navigateurs depuis les serveurs de téléchargement de Playwright. Ces fournisseurs peuvent voir votre adresse IP.</li>
+  <li><strong>API Anthropic :</strong> uniquement si vous utilisez les fonctionnalités d’IA.</li>
+  <li><strong>Dépôts Git et bases de données :</strong> uniquement ceux que vous configurez vous-même ; les connexions partent directement de votre ordinateur vers vos serveurs.</li>
+</ul>
+
+<h2>6. Partage de tests</h2>
+<p>L’export d’un fichier <code>.tps</code> ou la publication vers un dépôt Git n’ont lieu que sur votre initiative. Le contenu partagé comprend les tests, leurs fichiers de données et votre profil de partage (nom, entreprise, e-mail). L’Application vous avertit lorsqu’elle détecte des mots de passe dans le contenu et vous permet de vider leurs valeurs ; il s’agit d’un avertissement, pas d’une garantie. Les destinataires et hébergeurs Git traitent les données selon leurs propres politiques. Vous êtes responsable de ce que vous partagez.</p>
+
+<h2>7. Identifiants et sécurité</h2>
+<p>Votre clé API, vos jetons Git et vos identifiants de base de données sont chiffrés à l’aide du stockage sécurisé de votre système d’exploitation (Trousseau sur macOS, DPAPI sur Windows, libsecret sur Linux) lorsqu’il est disponible. Ils ne sont jamais écrits en clair dans le fichier de réglages ni dans les journaux. Si le chiffrement système n’est pas disponible, l’Application vous en avertit. Aucun système n’est totalement sûr.</p>
+
+<h2>8. Conservation et suppression</h2>
+<p>Les données sont conservées jusqu’à ce que vous les supprimiez. Vous pouvez supprimer des tests dans l’Application et effacer votre clé IA dans les Paramètres. Pour tout supprimer, désinstallez l’Application puis supprimez le dossier <code>playwright-runtime</code> de votre dossier personnel (la désinstallation seule peut ne pas le supprimer).</p>
+
+<h2>9. Vos droits</h2>
+<p>L’Éditeur ne détient pas vos données ; il n’y a donc rien à consulter, rectifier ou supprimer de son côté. Si vous écrivez à l’Éditeur, votre adresse e-mail et votre message sont utilisés uniquement pour vous répondre et conservés le temps nécessaire ; vous pouvez demander leur suppression à tout moment.</p>
+<p>Conformément au RGPD, vous disposez des droits d’accès, de rectification, d’effacement, de limitation, de portabilité et d’opposition, ainsi que du droit d’introduire une réclamation auprès de votre autorité de protection des données (par exemple la CNIL en France ou le Garante en Italie). Pour les données détenues par des tiers (Anthropic, hébergeurs Git, etc.), adressez-vous directement à eux.</p>
+
+<h2>10. Enfants</h2>
+<p>L’Application est destinée à un usage professionnel par des adultes et ne s’adresse pas aux enfants. L’Éditeur ne collecte pas sciemment de données d’enfants.</p>
+
+<h2>11. Modifications</h2>
+<p>Cette politique peut être mise à jour. La date en haut de page indique la dernière version ; les changements importants seront signalés dans les notes de version de l’Application.</p>
+
+<h2>12. Contact</h2>
+<p>IT SOLUTION – <a href="mailto:contactus@travelpostservices.eu">Contactez-nous</a></p>
+</section>
+
+<!-- ===================================================== ITALIANO ===================================================== -->
+<section id="it" lang="it">
+<h1>Informativa sulla privacy – Automation</h1>
+<p class="updated">Ultimo aggiornamento: 18 ottobre 2026</p>
+
+<h2>1. Chi siamo</h2>
+<p>Automation è un’applicazione desktop per Windows, macOS e Linux che permette di registrare, riprodurre e gestire test automatici del browser. L’App è pubblicata da IT SOLUTION. Contatto: <a href="mailto:contactus@travelpostservices.eu">CONTATTACI</a>.</p>
+
+<h2>2. In breve</h2>
+<ul>
+  <li>L’App funziona sul tuo computer. Non esiste un account utente né un server dell’Editore.</li>
+  <li>L’Editore non raccoglie, non riceve, non vende e non condivide i tuoi dati personali. L’App non contiene strumenti di analisi, pubblicità, tracciamento o telemetria.</li>
+  <li>L’App stabilisce solo le connessioni di rete necessarie alle funzioni che utilizzi (vedi sezione 5).</li>
+</ul>
+
+<h2>3. Dati memorizzati sul tuo dispositivo</h2>
+<p>L’App memorizza i propri dati in una cartella chiamata <code>playwright-runtime</code>, nella tua cartella personale. Contiene: i test registrati, i file di dati di test (CSV), i risultati delle esecuzioni, i report e gli screenshot degli errori; le tue impostazioni; il profilo di condivisione che inserisci (nome, cognome, azienda, e-mail); il logo scelto per la personalizzazione; e segreti cifrati (vedi sezione 7).</p>
+<p>Questi dati restano sul tuo dispositivo e l’Editore non vi ha accesso. Un test registrato può contenere valori digitati durante la registrazione, comprese le credenziali.</p>
+
+<h2>4. Funzioni di IA facoltative</h2>
+<p>Le funzioni di IA (miglioramento dei test, diagnosi degli errori, generazione di test da una descrizione, conversione JS/Java, generazione di dati di test e assistente chat) sono facoltative e possono essere disattivate in Impostazioni → IA.</p>
+<p>Quando ne usi una, l’App invia il contenuto pertinente all’API di Anthropic: codice del test, selettori, messaggi di errore e log, screenshot degli errori e il testo che digiti. Tale contenuto può includere valori presenti nei tuoi test. Ti consigliamo di non usare l’IA su test che contengono credenziali reali.</p>
+<ul>
+  <li><strong>Modalità chiave personale (BYOK):</strong> le richieste usano la tua chiave API Anthropic, nell’ambito del tuo rapporto diretto con Anthropic.</li>
+  <li><strong>Modalità gestita:</strong> la chiave è fornita da un amministratore o da un’organizzazione.</li>
+</ul>
+<p>L’Editore non gestisce alcun server intermedio e non riceve questo contenuto. Il trattamento da parte di Anthropic è regolato dalle sue politiche: <a href="https://www.anthropic.com/legal/privacy" rel="noopener">anthropic.com/legal/privacy</a>.</p>
+
+<h2>5. Connessioni di rete</h2>
+<ul>
+  <li><strong>Siti che testi:</strong> i browser controllati da Playwright visitano gli indirizzi usati nei tuoi test.</li>
+  <li><strong>Download di componenti:</strong> al primo utilizzo l’App può scaricare pacchetti Playwright dal registro npm e i browser dai server di download di Playwright. Questi fornitori possono vedere il tuo indirizzo IP.</li>
+  <li><strong>API di Anthropic:</strong> solo se usi le funzioni di IA.</li>
+  <li><strong>Repository Git e database:</strong> solo quelli che configuri tu; le connessioni partono direttamente dal tuo computer verso i tuoi server.</li>
+</ul>
+
+<h2>6. Condivisione dei test</h2>
+<p>L’esportazione di un file <code>.tps</code> o la pubblicazione su un repository Git avvengono solo per tua iniziativa. Il contenuto condiviso comprende i test, i relativi file di dati e il tuo profilo di condivisione (nome, azienda, e-mail). L’App ti avvisa quando rileva password nel contenuto e ti permette di svuotarne i valori; si tratta di un avviso, non di una garanzia. Destinatari e host Git trattano i dati secondo le proprie politiche. Sei responsabile di ciò che condividi.</p>
+
+<h2>7. Credenziali e sicurezza</h2>
+<p>La tua chiave API, i token Git e le credenziali dei database sono cifrati con l’archivio sicuro del sistema operativo (Portachiavi su macOS, DPAPI su Windows, libsecret su Linux) quando disponibile. Non vengono mai scritti in chiaro nel file delle impostazioni né nei log. Se la cifratura di sistema non è disponibile, l’App ti avvisa. Nessun sistema è completamente sicuro.</p>
+
+<h2>8. Conservazione e cancellazione</h2>
+<p>I dati sono conservati finché non li elimini. Puoi eliminare i test nell’App e rimuovere la chiave IA nelle Impostazioni. Per rimuovere tutto, disinstalla l’App ed elimina la cartella <code>playwright-runtime</code> dalla tua cartella personale (la sola disinstallazione potrebbe non rimuoverla).</p>
+
+<h2>9. I tuoi diritti</h2>
+<p>L’Editore non detiene i tuoi dati, quindi non c’è nulla da consultare, rettificare o cancellare da parte sua. Se scrivi all’Editore, il tuo indirizzo e-mail e il tuo messaggio sono usati solo per risponderti e conservati per il tempo necessario; puoi chiederne la cancellazione in qualsiasi momento.</p>
+<p>Ai sensi del GDPR hai i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, e il diritto di presentare reclamo alla tua autorità per la protezione dei dati (ad esempio il Garante in Italia o la CNIL in Francia). Per i dati detenuti da terzi (Anthropic, host Git, ecc.) rivolgiti direttamente a loro.</p>
+
+<h2>10. Minori</h2>
+<p>L’App è destinata a un uso professionale da parte di adulti e non è rivolta ai minori. L’Editore non raccoglie consapevolmente dati di minori.</p>
+
+<h2>11. Modifiche</h2>
+<p>La presente informativa può essere aggiornata. La data in alto indica l’ultima versione; le modifiche rilevanti saranno indicate nelle note di rilascio dell’App.</p>
+
+<h2>12. Contatti</h2>
+<p>[IT SOLUTION] – <a href="mailto:contactus@travelpostservices.eu">CONTATTACI</a></p>
+</section>
+
+</main>
+</body>
+</html>
